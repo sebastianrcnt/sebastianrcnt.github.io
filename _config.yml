@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl"
 
 baseurl: # the subpath of the site
 url: http://sebastianrcnt.github.io/ # the base hostname & protocol for your site
-
+host: 0.0.0.0
 permalink: /:year-:month/:title
 timezone:
 

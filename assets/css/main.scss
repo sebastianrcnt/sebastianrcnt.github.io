@@ -67,13 +67,6 @@
   box-sizing: border-box;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
-
 html,
 html.light {
   @include lightMode;
@@ -128,14 +121,11 @@ html.dark {
 }
 
 body {
-  height: 100%;
   font-weight: normal;
   font-style: normal;
   font-family: "Arita-dotum-Medium", "BBTreeGR", -apple-system,
     BlinkMacSystemFont, "Titillium Web", "Segoe UI", Roboto, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0;
-  padding: 0;
   background-color: var(--bg_color);
   transition: background-color 0.5s ease;
   background-size: 100%;
@@ -165,13 +155,14 @@ img {
   position: relative;
   border-radius: 15px;
   box-shadow: 0 0 2px 2px var(--shadow_color);
-  padding-bottom: 2rem;
-  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   @include breakpoint(medium) {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
+    // max-width: 960px;
+    width: 100%;
     padding-top: 2.5rem;
   }
 
@@ -736,7 +727,6 @@ img {
 .post_comment {
   display: none;
 }
-
 html,
 body {
   width: 100vw;
@@ -747,14 +737,32 @@ body {
   padding: 20px;
   @media screen and (max-width: 440px) {
     padding: 10px;
+    .content {
+      margin-bottom: 10px;
+    }
   }
-}
 
-.content {
-  overflow-y: scroll;
-  height: 100%;
+  @media screen and (min-width: 440px) {
+    .content {
+      overflow: scroll;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 footer {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
