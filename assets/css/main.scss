@@ -186,6 +186,8 @@ img {
 
   @include breakpoint(medium) {
     margin-left: 22rem;
+    height: 100%;
+    overflow-y: scroll;
   }
 }
 
