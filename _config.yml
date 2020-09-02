@@ -1,9 +1,7 @@
 title: 정쿨의 개발일지✨ #Your awesome title
 email: sebastianrcnt@gmail.com
 description: > # this means to ignore newlines until "baseurl"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  정쿨의 개발일지입니다!
 
 baseurl: # the subpath of the site
 url: http://sebastianrcnt.github.io/ # the base hostname & protocol for your site
@@ -20,7 +18,7 @@ user:
   name: 정쿨의 개발일지✨
   pic: /assets/img/profile.jpg
   picAlt: "catbook"
-  job: 쭈글이 비전공자 웹 개발자..
+  job: 쭈글이 비전공자 웹 개발자..🐙
   # aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:

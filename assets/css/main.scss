@@ -160,12 +160,9 @@ img {
 }
 
 .content {
-  margin: 1.4em auto;
   z-index: 0;
   background: var(--content_bg);
   position: relative;
-  max-width: 92%;
-  min-height: 85%;
   border-radius: 15px;
   box-shadow: 0 0 2px 2px var(--shadow_color);
   padding-bottom: 2rem;
@@ -732,4 +729,30 @@ img {
 // CUSTOMIZE
 .post_content {
   font-family: "RIDIBatang";
+}
+
+.post_comment {
+  display: none;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding: 20px;
+  @media screen and (max-width: 440px) {
+    padding: 10px;
+  }
+}
+
+.content {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+footer {
+  display: none;
 }
