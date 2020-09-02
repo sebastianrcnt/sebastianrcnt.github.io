@@ -158,7 +158,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   overflow-x: hidden;
-  overflow-y: scroll;
 
   @include breakpoint(medium) {
     // max-width: 960px;
@@ -734,8 +733,8 @@ body {
 }
 
 body {
-  padding: 20px;
   @media screen and (max-width: 440px) {
+    // smartphone
     padding: 10px;
     .content {
       margin-bottom: 10px;
@@ -743,10 +742,11 @@ body {
   }
 
   @media screen and (min-width: 440px) {
+    padding: 20px;
+    // tablet
     .content {
       overflow: scroll;
       height: 100%;
-      margin-bottom: 10px;
     }
   }
 }
