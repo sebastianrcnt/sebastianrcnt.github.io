@@ -19,23 +19,6 @@ layout: page
     </span>
     {% endif %}
   </div>
-  <div class="post_data">
-    {% for keyword in page.keywords %}
-    <div
-      style="
-        display: inline-block;
-        background: {{ keyword.color }};
-        font-size: 0.8rem;
-        border-radius: 5px;
-        color: white;
-        padding: 5px;
-        margin-right: 5px;
-      "
-    >
-      {{ keyword.text }}
-    </div>
-    {% endfor %}
-  </div>
   <div class="post_content">{{ content }}</div>
 
   {% if page.comment %}
