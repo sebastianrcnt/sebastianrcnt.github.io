@@ -18,7 +18,7 @@ user:
   name: 정쿨의 개발일지✨
   pic: /assets/img/profile.jpg
   picAlt: "catbook"
-  job: 쭈글이 비전공자 웹 개발자..🐙
+  job:
   # aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:

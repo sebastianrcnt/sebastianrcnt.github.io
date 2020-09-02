@@ -339,7 +339,6 @@ img {
 
   &:hover {
     cursor: pointer;
-    animation: jiggle 2s ease-in-out infinite;
   }
 
   @include mobile-only {
@@ -479,24 +478,6 @@ img {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
-  }
-}
-
-@keyframes jiggle {
-  0% {
-    transform: rotate(0);
-  }
-
-  25% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(0);
-  }
-
-  75% {
-    transform: rotate(3deg);
   }
 }
 
@@ -771,5 +752,13 @@ header {
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+body {
+  background: url("https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/01/Every-Mac-wallpaper.jpeg?w=2500&quality=82&strip=all&ssl=1");
+}
+
+* {
+  transition: background-color 1s ease;
 }
