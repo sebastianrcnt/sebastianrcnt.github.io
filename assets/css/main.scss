@@ -123,8 +123,9 @@ html.dark {
 body {
   font-weight: normal;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Titillium Web", "Segoe UI",
-    Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Arita-dotum-Medium", -apple-system, BlinkMacSystemFont,
+    "Titillium Web", "Segoe UI", Roboto, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--bg_color);
   transition: background-color 0.5s ease;
   background-size: 100%;
@@ -756,7 +757,7 @@ header {
 }
 
 body {
-  background: url("https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/01/Every-Mac-wallpaper.jpeg?w=2500&quality=82&strip=all&ssl=1");
+  //   background: url("https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/01/Every-Mac-wallpaper.jpeg?w=2500&quality=82&strip=all&ssl=1");
 }
 
 * {

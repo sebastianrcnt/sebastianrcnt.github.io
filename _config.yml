@@ -16,7 +16,7 @@ disqus_shortname: #disqus shortname
 
 user:
   name: 정쿨의 개발일지✨
-  pic: /assets/img/profile.jpg
+  pic: /assets/img/profile.png
   picAlt: "catbook"
   job:
   # aboutme: true # comment this out if you don't need the 'about' page.

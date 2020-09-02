@@ -35,11 +35,43 @@
         </li>
       </ul>
       {% endfor %}
+      <div class="nav_list contact">
+        <a
+          href="https://instagram.com/sebastianrcnt"
+          class="social fa fa-instagram"
+        ></a>
+        <a
+          href="https://github.com/sebastianrcnt"
+          class="social fa fa-github"
+        ></a>
+      </div>
     </nav>
   </div>
 </header>
 <style>
   /* rgb(221, 192, 201) */
+  .contact {
+    margin-top: 10px;
+  }
+
+  .social {
+    border-radius: 3px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social.fa-instagram {
+    background: rgb(221, 42, 123);
+  }
+  .social.fa-github {
+    background: #004ca3;
+  }
   .icon {
     position: absolute;
     top: 10px;
