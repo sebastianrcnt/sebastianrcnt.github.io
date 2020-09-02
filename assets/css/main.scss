@@ -733,7 +733,7 @@ body {
 }
 
 body {
-  @media screen and (max-width: 440px) {
+  @media (max-width: 440px) {
     // smartphone
     padding: 10px;
     .content {
