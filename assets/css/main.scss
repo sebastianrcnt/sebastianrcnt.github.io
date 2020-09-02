@@ -119,6 +119,14 @@ html.dark {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   font-weight: normal;
@@ -719,4 +727,9 @@ img {
     text-decoration: none;
     color: var(--footer_font_a);
   }
+}
+
+// CUSTOMIZE
+.post_content {
+  font-family: "RIDIBatang";
 }

@@ -8,29 +8,39 @@ layout: page
     <p class="post_title">{{ page.title }}</p>
     {% endif %}
   </div>
-  <div class="post_data">
+  <div class="post_data" style="margin-bottom: 30px">
     {% if page.date %}
     <span class="post_date">{{ page.date | date: "%b %-d, %Y" }}</span>
-    {% endif %}
-    {% if page.categories %}
+    {% endif %} {% if page.categories %}
     <span class="post_categories">
       &raquo; {% for cat_name in page.categories %}
-      <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a>{% if forloop.last == false %},
-      {% endif %}{% endfor %}
+      <a href="{{ site.baseurl }}/categories/{{ cat_name }}">{{ cat_name }}</a
+      >{% if forloop.last == false %}, {% endif %}{% endfor %}
     </span>
     {% endif %}
   </div>
-  <div class="post_content">
-    {{ content }}
+  <div class="post_data">
+    {% for keyword in page.keywords %}
+    <div
+      style="
+        display: inline-block;
+        background: {{ keyword.color }};
+        font-size: 0.8rem;
+        border-radius: 5px;
+        color: white;
+        padding: 5px;
+        margin-right: 5px;
+      "
+    >
+      {{ keyword.text }}
+    </div>
+    {% endfor %}
   </div>
-
+  <div class="post_content">{{ content }}</div>
 
   {% if page.comment %}
   <div class="post_comment">
-
     {% include disqus.html username = site.disqus.shortname %}
-
   </div>
   {% endif %}
-
 </div>
