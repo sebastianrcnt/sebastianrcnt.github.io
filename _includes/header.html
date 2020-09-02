@@ -1,0 +1,66 @@
+<header class="header">
+  <div class="icon red"></div>
+  <div class="icon yellow"></div>
+  <div class="icon green"></div>
+  <div class="header_content">
+    <label class="theme_changer">
+      <input theme_toggle type="checkbox" />
+      <div class="button"></div>
+    </label>
+    <a class="header_circle" href="{{ '/' | relative_url }}">
+      <img
+        src="{{ site.user.pic | relative_url }}"
+        alt="{{ site.user.picAlt }}"
+        style="object-fit: cover; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)"
+      />
+    </a>
+    <span class="header_name">{{ site.user.name }}</span>
+    <span class="header_job">{{ site.user.job }}</span>
+    <span class="header_mes">{{ site.user.message }}</span>
+
+    <nav class="nav">
+      {% if site.user.aboutme %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="{{ site.baseurl }}/aboutme.html">about</a>
+        </li>
+      </ul>
+      {% endif %} {% for category in site.categories %} {% capture cat_name %}{{
+      category | first }}{% endcapture %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa"
+            >{{ cat_name }} ({{ category | last | size }})</a
+          >
+        </li>
+      </ul>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+<style>
+  /* rgb(221, 192, 201) */
+  .icon {
+    position: absolute;
+    top: 10px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+
+  .icon.red {
+    background: rgb(224, 79, 73);
+    left: 10px;
+  }
+
+  .icon.yellow {
+    background: rgb(239, 182, 54);
+    left: 25px;
+  }
+
+  .icon.green {
+    background: rgb(104, 197, 65);
+    left: 40px;
+  }
+</style>
