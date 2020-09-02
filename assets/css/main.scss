@@ -17,7 +17,7 @@
   --archive_title: #46a891;
   --archive_title_hover: #87cdbd;
   --name_font: #ffaa00;
-  --job_font: #003845;
+  --job_font: rgba(0, 0, 0, 0.25);
   --nav_font: #8d7edc;
   --nav_font_hover: #d4cef2;
   --shadow_color: rgba(160, 160, 160, 0.05);
@@ -123,9 +123,8 @@ html.dark {
 body {
   font-weight: normal;
   font-style: normal;
-  font-family: "Arita-dotum-Medium", "BBTreeGR", -apple-system,
-    BlinkMacSystemFont, "Titillium Web", "Segoe UI", Roboto, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Titillium Web", "Segoe UI",
+    Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--bg_color);
   transition: background-color 0.5s ease;
   background-size: 100%;
@@ -764,4 +763,13 @@ footer {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+header {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
 }
