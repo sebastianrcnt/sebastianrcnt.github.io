@@ -18,6 +18,11 @@ layout: page
       >{% if forloop.last == false %}, {% endif %}{% endfor %}
     </span>
     {% endif %}
+    <div class="tags">
+      {% for tag in site.data.tags %} {% if page.tags contains tag %}
+      <div class="tag selected">{{ tag }}</div>
+      {% endif %} {% endfor %}
+    </div>
   </div>
   <div class="post_content">{{ content }}</div>
 

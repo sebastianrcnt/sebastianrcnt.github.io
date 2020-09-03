@@ -256,7 +256,7 @@ img {
   }
 
   @include mobile-only {
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
   }
@@ -746,8 +746,7 @@ footer {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-header {
+@mixin noselect() {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -755,11 +754,51 @@ header {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
 }
+header {
+  @include noselect();
+}
 
 body {
   //   background: url("https://i1.wp.com/9to5mac.com/wp-content/uploads/sites/6/2020/01/Every-Mac-wallpaper.jpeg?w=2500&quality=82&strip=all&ssl=1");
 }
 
 * {
-  transition: background-color 1s ease;
+  transition: background-color 0.4s ease, color 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.tags {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include breakpoint(medium) {
+  }
+
+  @include mobile-only {
+    justify-content: center;
+  }
+
+  .tag {
+    $tag-color: var(--nav_font);
+    display: inline-block;
+    color: $tag-color;
+    background: transparent;
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid $tag-color;
+    font-size: 0.9rem;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    @include noselect();
+
+    &.selected {
+      color: white;
+      background: $tag-color;
+    }
+  }
 }
