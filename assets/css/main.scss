@@ -120,6 +120,42 @@ html.dark {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Regular.woff2") format("woff2"),
+    url("../fonts/CascadiaCodePL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-Regular.woff2") format("woff2"),
+    url("../fonts/CascadiaCode-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Mono PL";
+  src: url("../fonts/CascadiaMonoPL-Regular.woff2") format("woff2"),
+    url("../fonts/CascadiaMonoPL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cascadia Mono";
+  src: url("../fonts/CascadiaMono-Regular.woff2") format("woff2"),
+    url("../fonts/CascadiaMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-weight: normal;
   font-style: normal;
@@ -593,8 +629,9 @@ img {
     color: var(--inlinecode_text);
     padding: 0.1em 0.4em;
     border-radius: 5px;
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-family: "Cascadia Mono", Consolas, Menlo, Monaco, Lucida Console,
+      Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+      monospace, serif;
     font-size: 0.85rem;
   }
 
