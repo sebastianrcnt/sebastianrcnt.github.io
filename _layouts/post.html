@@ -27,8 +27,6 @@ layout: page
   <div class="post_content">{{ content }}</div>
 
   {% if page.comment %}
-  <div class="post_comment">
-    {% include disqus.html username = site.disqus.shortname %}
-  </div>
+  <div class="post_comment"></div>
   {% endif %}
 </div>
